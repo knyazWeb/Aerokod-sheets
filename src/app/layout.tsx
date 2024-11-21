@@ -1,5 +1,6 @@
 //import type { Metadata } from 'next'
-import './globals.css';
+
+import { StoreProvider } from './(providers)';
 
 // TODO: Сделать свои шрифты
 //const geistSans = localFont({
@@ -27,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang='ru'>
       {/* TODO: Добавить шрифты в body */}
-      <body className={` antialiased`}>{children}</body>
+      <body className={` antialiased`}>
+        <StoreProvider>{children}</StoreProvider>
+      </body>
     </html>
   );
 }
