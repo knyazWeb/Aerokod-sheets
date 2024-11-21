@@ -18,6 +18,9 @@
       }
     ],
     "paths": {
+      // Root Directory
+      "@@/*": ["./*"],
+      // Src Directory
       "@/*": ["./src/*"]
     }
   },
