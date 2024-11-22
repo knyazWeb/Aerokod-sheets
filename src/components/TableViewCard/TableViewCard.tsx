@@ -20,8 +20,8 @@ const TableViewCard = ({
   const cardClickHandler = () => {
     if (isEmpty) {
       setIsModalOpen(true);
-    } else {
-      tableData && dispatch(createTable(tableData));
+    } else if (tableData) {
+      dispatch(createTable(tableData));
       router.push('/table');
     }
   };
