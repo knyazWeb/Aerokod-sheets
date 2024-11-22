@@ -37,6 +37,7 @@ const AddCellsModal = ({ onClose }: AddCellsModalProps) => {
               setRowsValue(e.target.value)
             }
             type='number'
+            min={1}
             placeholder='Кол-во строк'
             required
           />
@@ -46,6 +47,7 @@ const AddCellsModal = ({ onClose }: AddCellsModalProps) => {
               setColsValue(e.target.value)
             }
             type='number'
+            min={1}
             placeholder='Кол-во столбцов'
             required
           />

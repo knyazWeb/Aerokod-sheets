@@ -61,6 +61,7 @@ const CreateTableModal = ({ onClose }: CreateTableModalProps) => {
               setRowsValue(e.target.value)
             }
             type='number'
+            min={1}
             placeholder='Кол-во строк'
             required
           />
@@ -70,6 +71,7 @@ const CreateTableModal = ({ onClose }: CreateTableModalProps) => {
               setColsValue(e.target.value)
             }
             type='number'
+            min={1}
             placeholder='Кол-во столбцов'
             required
           />
